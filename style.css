@@ -25,6 +25,12 @@ body > section {
 
 @media screen and (min-width: 620px) {
     body {
+        padding-inline: 64px;
+    }
+}
+
+@media screen and (min-width: 1135px) {
+    body {
         padding-inline: 128px;
     }
 }
@@ -85,7 +91,7 @@ section.bio .text .description {
     letter-spacing: 0.04rem;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 1135px) {
     section.bio {
         flex-direction: row;
         gap: 176px
@@ -163,7 +169,7 @@ section.technologies .logos {
     letter-spacing: 0.06rem;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 1135px) {
     section.technologies {
         flex-direction: row;
         align-items: start;
