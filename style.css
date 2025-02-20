@@ -234,6 +234,7 @@ section.projects .list details.item > .thumbnail img {
 
 section.projects .list details.item > .technologies {
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, minmax(1.5rem, 2rem));
     justify-items: center;
     align-items: center;
@@ -313,6 +314,7 @@ section.experience .list details.item > .thumbnail {
 
 section.experience .list details.item > .technologies {
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, minmax(1.5rem, 2rem));
     justify-items: center;
     align-items: center;
@@ -382,6 +384,7 @@ section.education .list details.item > .thumbnail {
 
 section.education .list details.item > .technologies {
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, minmax(1.5rem, 2rem));
     justify-items: center;
     align-items: center;
@@ -398,7 +401,11 @@ section.education .list details.item > .technologies > img {
 
 /* Generals */
 
-section .list details.item > summary > svg {}
+section .list details.item > summary > svg,
+section .list .item.end > svg {
+    height: 24px;
+    width: 24px;
+}
 
 section.socials * {
     fill: light-dark(black, white);
