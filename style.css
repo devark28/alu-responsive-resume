@@ -23,6 +23,12 @@ body > section {
     width: 100%;
 }
 
+@media screen and (min-width: 620px) {
+    body {
+        padding-inline: 128px;
+    }
+}
+
 /* SECTION Bio */
 
 section.bio {
@@ -50,7 +56,9 @@ section.bio .profile .quote {
 section.bio .profile .picture {
     width: 160px;
     height: 160px;
-    border-radius: 999px
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: center;
 }
 
 section.bio .text {
@@ -77,6 +85,26 @@ section.bio .text .description {
     letter-spacing: 0.04rem;
 }
 
+@media screen and (min-width: 620px) {
+    section.bio {
+        flex-direction: row;
+        gap: 176px
+    }
+
+    section.bio .text {
+        align-items: start;
+    }
+
+    section.bio .text .description {
+        text-align: start;
+    }
+
+    section.bio .profile .picture {
+        width: 256px;
+        height: 256px;
+    }
+}
+
 /* SECTION Socials */
 
 section.socials {
@@ -86,6 +114,9 @@ section.socials {
 }
 
 section.socials .resume-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 6rem;
     height: 1.5rem;
     text-align: center;
@@ -100,6 +131,8 @@ section.socials .resume-link {
 /* SECTION Technologies */
 
 section.technologies {
+    display: flex;
+    flex-direction: column;
 }
 
 section.technologies > .stack,
@@ -128,6 +161,13 @@ section.technologies .logos {
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
+}
+
+@media screen and (min-width: 620px) {
+    section.technologies {
+        flex-direction: row;
+        align-items: start;
+    }
 }
 
 /* SECTION Projects */
@@ -189,6 +229,22 @@ section.projects .list details.item > .thumbnail {
 
 section.projects .list details.item > .thumbnail img {
     width: 100%;
+}
+
+section.projects .list details.item > .technologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1.5rem, 2rem));
+    justify-items: center;
+    align-items: center;
+    padding: 5px 48px;
+    gap: .5rem;
+}
+
+section.projects .list details.item > .technologies > img {
+    height: 1.5rem;
+    width: 1.5rem;
+    object-position: center;
+    object-fit: cover;
 }
 
 section.projects .list div.item.end {
@@ -258,6 +314,22 @@ section.experience .list details.item > .thumbnail {
     letter-spacing: 0.8px;
 }
 
+section.experience .list details.item > .technologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1.5rem, 2rem));
+    justify-items: center;
+    align-items: center;
+    padding: 5px 48px;
+    gap: .5rem;
+}
+
+section.experience .list details.item > .technologies > img {
+    height: 1.5rem;
+    width: 1.5rem;
+    object-position: center;
+    object-fit: cover;
+}
+
 /* SECTION Education */
 
 section.education {
@@ -314,3 +386,23 @@ section.education .list details.item > .thumbnail {
     font-weight: 600;
     letter-spacing: 0.8px;
 }
+
+section.education .list details.item > .technologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1.5rem, 2rem));
+    justify-items: center;
+    align-items: center;
+    padding: 5px 48px;
+    gap: .5rem;
+}
+
+section.education .list details.item > .technologies > img {
+    height: 1.5rem;
+    width: 1.5rem;
+    object-position: center;
+    object-fit: cover;
+}
+
+/* Generals */
+
+section .list details.item > summary > svg {}
