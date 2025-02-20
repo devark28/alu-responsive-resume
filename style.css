@@ -407,3 +407,8 @@ section.socials * {
 section .item svg * {
     stroke: light-dark(black, white);
 }
+
+section div.item {
+    text-decoration: underline;
+    text-decoration-color: light-dark(dark, light);
+}
