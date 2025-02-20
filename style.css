@@ -1,3 +1,7 @@
+:root {
+    color-scheme: light dark;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +9,11 @@
     outline: none;
     font-family: Inter, serif;
     text-decoration: none;
+    color: light-dark(black, white);
+    background: light-dark(white, #1e1e1e);
 }
 
 body {
-    background: white;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -53,7 +58,6 @@ section.bio .profile {
 
 section.bio .profile .quote {
     text-align: center;
-    color: black;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.04rem;
@@ -77,7 +81,6 @@ section.bio .text {
 
 section.bio .text .name {
     text-align: center;
-    color: black;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
@@ -85,7 +88,6 @@ section.bio .text .name {
 
 section.bio .text .description {
     text-align: center;
-    color: black;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.04rem;
@@ -126,7 +128,6 @@ section.socials .resume-link {
     width: 6rem;
     height: 1.5rem;
     text-align: center;
-    color: black;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
@@ -155,7 +156,6 @@ section.technologies > .tools {
 
 section.technologies .title {
     text-align: center;
-    color: black;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
@@ -163,7 +163,6 @@ section.technologies .title {
 
 section.technologies .logos {
     text-align: center;
-    color: black;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
@@ -186,7 +185,6 @@ section.projects {
 
 section.projects > .title {
     text-align: center;
-    color: black;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
@@ -194,7 +192,6 @@ section.projects > .title {
 
 section.projects .list {
     padding: 10px 16px;
-    background: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -220,14 +217,12 @@ section.projects .list details.item > summary {
 }
 
 section.projects .list details.item > summary .title {
-    color: black;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.8px;
 }
 
 section.projects .list details.item > .thumbnail {
-    color: black;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.8px;
@@ -273,7 +268,6 @@ section.experience {
 
 section.experience > .title {
     text-align: center;
-    color: black;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
@@ -281,7 +275,6 @@ section.experience > .title {
 
 section.experience .list {
     padding: 10px 16px;
-    background: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -307,14 +300,12 @@ section.experience .list details.item > summary {
 }
 
 section.experience .list details.item > summary .title {
-    color: black;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.8px;
 }
 
 section.experience .list details.item > .thumbnail {
-    color: black;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.8px;
@@ -346,7 +337,6 @@ section.education {
 
 section.education > .title {
     text-align: center;
-    color: black;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
@@ -354,7 +344,6 @@ section.education > .title {
 
 section.education .list {
     padding: 10px 16px;
-    background: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -380,14 +369,12 @@ section.education .list details.item > summary {
 }
 
 section.education .list details.item > summary .title {
-    color: black;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.8px;
 }
 
 section.education .list details.item > .thumbnail {
-    color: black;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.8px;
@@ -412,3 +399,11 @@ section.education .list details.item > .technologies > img {
 /* Generals */
 
 section .list details.item > summary > svg {}
+
+section.socials * {
+    fill: light-dark(black, white);
+}
+
+section .item svg * {
+    stroke: light-dark(black, white);
+}
